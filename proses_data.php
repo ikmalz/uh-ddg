@@ -68,9 +68,8 @@ if (isset($_GET['id'])) {
     } else {
         echo "Error deleting record:" . mysqli_error($conn);
     }
-} else {
-    echo "ID parameter is missing";
-}
+} 
+
 
 // Close database connection
 mysqli_close($conn);
