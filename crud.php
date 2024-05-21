@@ -107,33 +107,36 @@ $currentPage = 'crud';
             </tr>
           </thead>
           <tbody>
-            <?php
-            $sql = "SELECT * FROM tbl_buku ORDER BY id ASC";
-            $result = mysqli_query($conn, $sql);
+  <?php
+  $sql = "SELECT * FROM tbl_buku ORDER BY id ASC";
+  $result = mysqli_query($conn, $sql);
 
-            if (!$result) {
-              die("Query Error : " . mysqli_errno($conn) . " - " . mysqli_error($conn));
-            }
-            $no = 1;
-            while ($row = mysqli_fetch_assoc($result)) {
-            ?>
-              <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
-                <td class="py-4 px-6"><?php echo $no; ?></td>
-                <td class="py-4 px-6"><img src="<?php echo $row['foto']; ?>" alt="" class="h-10"></td>
-                <td class="py-4 px-6"><?php echo $row['judul']; ?> </td>
-                <td class="py-4 px-6"><?php echo $row['pengarang']; ?> </td>
-                <td class="py-4 px-6"><?php echo $row['tahun_terbit']; ?></td>
-                <td class="py-4 px-6">
-                  <a href="proses_data.php?id=<?php echo $row['id']; ?>" class="text-red-600 dark:text-red-400">
-                    <i class='bx bx-trash' title="Hapus"></i>
-                  </a>
-                </td>
-              </tr>
-            <?php
-              $no++;
-            }
-            ?>
-          </tbody>
+  if (!$result) {
+    die("Query Error : " . mysqli_errno($conn) . " - " . mysqli_error($conn));
+  }
+  $no = 1;
+  while ($row = mysqli_fetch_assoc($result)) {
+  ?>
+    <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+      <td class="py-4 px-6"><?php echo $no; ?></td>
+      <td class="py-4 px-6"><img src="<?php echo $row['foto']; ?>" alt="" class="h-10"></td>
+      <td class="py-4 px-6"><?php echo $row['judul']; ?> </td>
+      <td class="py-4 px-6"><?php echo $row['pengarang']; ?> </td>
+      <td class="py-4 px-6"><?php echo $row['tahun_terbit']; ?></td>
+      <td class="py-4 px-6">
+        <a href="edit.php?id=<?php echo $row['id']; ?>" class="text-blue-600 dark:text-blue-400">
+          <i class='bx bx-edit' title="Edit"></i>
+        </a>
+        <a href="proses_data.php?id=<?php echo $row['id']; ?>" class="text-red-600 dark:text-red-400 ml-2">
+          <i class='bx bx-trash' title="Hapus"></i> 
+        </a>
+      </td>
+    </tr>
+  <?php
+    $no++;
+  }
+  ?>
+</tbody>
         </table>
       </div>
     </div>
