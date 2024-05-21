@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <title>Document</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
@@ -15,8 +16,9 @@
 <body class="bg-gray-100">
 <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
     <div class="mx-auto max-w-lg text-center">
-      <h1 class="text-2xl font-bold sm:text-3xl">LOGIN!</h1>
-  
+        <a href="index.php">
+      <h1 class="text-2xl font-bold sm:text-3xl"><i class='bx bx-left-arrow-alt'></i> LOGIN!</h1>
+      </a>
       <p class="mt-4 text-gray-500">
         "Selamat datang di platform kami! Harap masuk untuk melanjutkan."
       </p>
