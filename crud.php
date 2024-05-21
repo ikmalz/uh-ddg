@@ -139,7 +139,7 @@ $currentPage = 'crud';
     </div>
   </div>
   <div class="text-sm text-white font-semibold py-10 text-center -mt-20">
-    Selamat datang di <a href="#" class="text-white hover:text-gray-800" target="_blank"> Aplikasi</a> Pengeluaran <a href="#" class="text-blueGray-500 hover:text-blueGray-800" target="_blank">buku</a>.
+    Selamat datang di <a href="#" class="text-white hover:text-gray-800" target="_blank"> Aplikasi</a> Pengelolaan <a href="#" class="text-blueGray-500 hover:text-blueGray-800" target="_blank">buku</a>.
   </div>
 </body>
 

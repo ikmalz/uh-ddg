@@ -39,7 +39,7 @@
                 <a href="crud.php" class="text-gray-900 dark:text-white mr-2">
                     <i class='bx bx-arrow-back'></i>
                 </a>
-                <h2 class="text-xl font-bold text-gray-900 dark:text-white">Update product</h2>
+                <h2 class="text-xl font-bold text-gray-900 dark:text-white">Tambah Buku</h2>
             </div>
         <form action="#" method="post" enctype="multipart/form-data">
             <div class="grid gap-4 mb-4 sm:grid-cols-2 sm:gap-6 sm:mb-5">
